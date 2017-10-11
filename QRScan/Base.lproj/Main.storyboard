@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRScan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-jV-8ik">
+                                <rect key="frame" x="20" y="40" width="335" height="301.5"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.062745098040000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dY1-jV-8ik" secondAttribute="height" multiplier="1:0.9" id="qrB-tP-Jca"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzL-rp-nps">
+                                <rect key="frame" x="187" y="410" width="1" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="drI-rS-bxg"/>
+                                    <constraint firstAttribute="width" constant="1" id="ttx-mv-3wU"/>
+                                </constraints>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DR-gX-SZe">
+                                <rect key="frame" x="20" y="374.5" width="335" height="43"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.062745098040000002" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="BEb-1b-Uq0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="19"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tRi-ap-h4d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qDX-G1-GOQ">
+                                <rect key="frame" x="20" y="447.5" width="335" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cRF-YC-OyN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" red="0.8666666666666667" green="0.062745098039215685" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4DR-gX-SZe" firstAttribute="top" secondItem="dY1-jV-8ik" secondAttribute="bottom" constant="33" id="D9x-jL-k7I"/>
+                            <constraint firstItem="qDX-G1-GOQ" firstAttribute="trailing" secondItem="4DR-gX-SZe" secondAttribute="trailing" id="HFW-p6-5Eg"/>
+                            <constraint firstItem="4DR-gX-SZe" firstAttribute="trailing" secondItem="dY1-jV-8ik" secondAttribute="trailing" id="Hma-sw-KlH"/>
+                            <constraint firstItem="wzL-rp-nps" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="410" id="KZq-gK-wOC"/>
+                            <constraint firstItem="qDX-G1-GOQ" firstAttribute="top" secondItem="4DR-gX-SZe" secondAttribute="bottom" constant="30" id="L1U-D3-blx"/>
+                            <constraint firstItem="dY1-jV-8ik" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="OVw-pT-Kha"/>
+                            <constraint firstAttribute="trailing" secondItem="dY1-jV-8ik" secondAttribute="trailing" constant="20" id="RF3-WW-21s"/>
+                            <constraint firstItem="4DR-gX-SZe" firstAttribute="leading" secondItem="dY1-jV-8ik" secondAttribute="leading" id="WDi-IN-I2I"/>
+                            <constraint firstItem="qDX-G1-GOQ" firstAttribute="leading" secondItem="4DR-gX-SZe" secondAttribute="leading" id="WHK-fE-UKJ"/>
+                            <constraint firstItem="dY1-jV-8ik" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="cGf-gX-NZq"/>
+                            <constraint firstItem="wzL-rp-nps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFo-7u-Zu5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnStartStop" destination="4DR-gX-SZe" id="l1Y-Ep-Bpr"/>
+                        <outlet property="lblString" destination="qDX-G1-GOQ" id="cld-H2-iRm"/>
+                        <outlet property="viewPreview" destination="dY1-jV-8ik" id="gtt-kR-woE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93.599999999999994" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+</document>
